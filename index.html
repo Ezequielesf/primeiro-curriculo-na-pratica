@@ -5,132 +5,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f8f4">
+  <meta name="description" content="Materiais práticos para ajudar você a se preparar para entrevistas de emprego.">
   <title>Prepare-se para sua próxima entrevista</title>
+
   <style>
     * { box-sizing: border-box; }
+
+    :root {
+      --bg: #f8f8f4;
+      --white: #fff;
+      --text: #202722;
+      --muted: #68716b;
+      --green: #236b4b;
+      --green-dark: #194e36;
+      --green-light: #eaf4ed;
+      --border: #e5e8e3;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background: #f8f8f4;
-      color: #202722;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
+
+    a { -webkit-tap-highlight-color: transparent; }
+
     .wrap {
       width: min(100% - 32px, 760px);
       margin: auto;
-      padding: 28px 0 48px;
+      padding: 25px 0 35px;
     }
+
     header {
       text-align: center;
+      font-size: 19px;
       font-weight: 800;
       letter-spacing: -.5px;
-      margin-bottom: 36px;
+      margin-bottom: 38px;
     }
+
+    header span { color: var(--green); }
+
+    .hero { text-align: center; }
+
     .eyebrow {
-      color: #236b4b;
-      font-size: 12px;
+      display: inline-block;
+      color: var(--green);
+      background: var(--green-light);
+      padding: 6px 12px;
+      border-radius: 30px;
+      font-size: 11px;
       font-weight: 800;
-      letter-spacing: 1.6px;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
+
     h1 {
-      font-size: clamp(30px, 7vw, 48px);
-      line-height: 1.12;
+      font-size: clamp(31px, 7vw, 47px);
+      line-height: 1.13;
       letter-spacing: -1.5px;
-      margin: 14px 0;
+      margin: 18px 0;
     }
+
     .intro {
-      color: #68716b;
-      font-size: 17px;
       max-width: 570px;
       margin: 0 auto;
+      color: var(--muted);
+      font-size: 17px;
     }
+
     .panel {
-      margin-top: 28px;
-      background: white;
-      border: 1px solid #e5e8e3;
+      margin-top: 30px;
+      background: var(--white);
+      border: 1px solid var(--border);
       border-radius: 20px;
       padding: clamp(22px, 5vw, 38px);
-      box-shadow: 0 12px 35px #2027220a;
+      box-shadow: 0 12px 35px rgba(32,39,34,.05);
     }
-    .tag {
-      display: inline-block;
-      background: #eaf4ed;
-      color: #236b4b;
-      border-radius: 30px;
-      padding: 6px 12px;
-      font-size: 12px;
+
+    .product-label {
+      color: var(--green);
+      font-size: 11px;
       font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
     }
-    h2 { font-size: 23px; line-height: 1.25; }
-    ul { padding-left: 22px; }
-    li { margin: 10px 0; }
+
+    h2 {
+      font-size: clamp(23px, 5vw, 29px);
+      line-height: 1.25;
+      letter-spacing: -.5px;
+      margin: 12px 0;
+    }
+
+    .description { color: var(--muted); }
+
+    ul {
+      padding-left: 22px;
+      margin: 23px 0;
+    }
+
+    li { margin: 12px 0; padding-left: 3px; }
+
+    li::marker { color: var(--green); }
+
     .price {
-      font-size: 42px;
-      font-weight: 850;
-      letter-spacing: -1px;
-      margin: 10px 0 18px;
-    }
-    .price small { font-size: 14px; font-weight: 500; }
-    .actions { display: grid; gap: 12px; margin-top: 26px; }
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 17px 18px;
-      border-radius: 12px;
-      text-align: center;
-      font: inherit;
+      font-size: 43px;
       font-weight: 800;
+      letter-spacing: -1.5px;
+      margin: 20px 0 4px;
+    }
+
+    .price-note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 56px;
+      padding: 15px 18px;
+      border-radius: 12px;
+      font-size: 15px;
+      line-height: 1.4;
+      font-weight: 800;
+      text-align: center;
       text-decoration: none;
-      cursor: pointer;
+      transition: background .2s, transform .2s;
     }
+
+    .btn:active { transform: scale(.99); }
+
     .primary {
-      background: #236b4b;
+      background: var(--green);
       color: white;
-      border: 0;
     }
-    .primary:hover { background: #194e36; }
+
+    .primary:hover { background: var(--green-dark); }
+
     .secondary {
       background: white;
-      color: #68716b;
-      border: 1px solid #dfe4de;
-      font-size: 14px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
     }
-    .note {
-      color: #68716b;
+
+    .secondary:hover { background: #f6f7f4; }
+
+    .trust {
+      margin-top: 20px;
+      color: var(--muted);
       font-size: 12px;
       text-align: center;
-      margin-top: 18px;
     }
+
     footer {
       text-align: center;
-      color: #68716b;
+      padding-top: 32px;
+      color: var(--muted);
       font-size: 12px;
-      margin-top: 32px;
     }
-    footer a { color: #236b4b; }
+
+    .support-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .support-links a {
+      color: var(--green);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+
+    .support-links a:hover { text-decoration: underline; }
+
+    .hidden { display: none !important; }
+
     @media (max-width: 420px) {
-      .wrap { width: min(100% - 22px, 760px); }
+      .wrap { width: calc(100% - 24px); }
       .panel { border-radius: 15px; }
+      header { margin-bottom: 28px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
-    <header>Primeiro Currículo <span style="color:#236b4b">na Prática</span></header>
+    <header>
+      Primeiro Currículo <span>na Prática</span>
+    </header>
 
-    <section style="text-align:center">
-      <div class="eyebrow" id="eyebrow">Uma oferta complementar</div>
-      <h1 id="headline">Prepare-se para responder com mais confiança</h1>
+    <section class="hero" id="hero">
+      <div class="eyebrow" id="eyebrow">Uma oportunidade para se preparar</div>
+      <h1 id="headline">
+        Chegue à sua próxima entrevista mais preparado
+      </h1>
       <p class="intro" id="intro">
-        Organize suas ideias e pratique antes da sua próxima entrevista de emprego.
+        Organize suas ideias, pratique suas respostas e conheça melhor
+        as perguntas comuns em processos seletivos.
       </p>
     </section>
 
-    <section class="panel">
-      <span class="tag" id="tag">KIT COMPLETO</span>
-      <h2 id="product">Kit Preparação para Entrevistas</h2>
-      <p id="description">
+    <section class="panel" id="offer">
+      <div class="product-label" id="product-label">
+        MATERIAL COMPLEMENTAR
+      </div>
+
+      <h2 id="product">
+        Kit Preparação para Entrevistas
+      </h2>
+
+      <p class="description" id="description">
         Perguntas comuns, exemplos de respostas e exercícios de preparação.
       </p>
 
@@ -138,68 +246,122 @@
         <li>Pratique respostas para perguntas frequentes.</li>
         <li>Organize sua apresentação pessoal.</li>
         <li>Identifique habilidades e experiências relevantes.</li>
-        <li>Prepare-se no seu ritmo, antes da entrevista.</li>
+        <li>Prepare-se no seu ritmo antes da entrevista.</li>
       </ul>
 
       <div class="price" id="price">R$ 27,90</div>
-
-      <div class="actions">
-        <!-- SUBSTITUA pelo código oficial de aceite gerado na Cakto -->
-        <div id="cakto-accept">
-          <button class="btn primary" type="button" disabled>
-            Configurar botão oficial da Cakto
-          </button>
-        </div>
-
-        <!-- SUBSTITUA pelo código oficial de recusa gerado na Cakto -->
-        <div id="cakto-reject">
-          <button class="btn secondary" type="button" disabled>
-            Configurar recusa oficial da Cakto
-          </button>
-        </div>
+      <div class="price-note" id="price-note">
+        Oferta opcional. Confira o conteúdo antes de comprar.
       </div>
 
-      <p class="note">
-        Confira o conteúdo e o preço antes de decidir. A oferta é opcional.
+      <div class="actions">
+        <a
+          class="btn primary"
+          id="accept"
+          href="https://pay.cakto.com.br/gd6uct8_1201635"
+        >
+          QUERO ME PREPARAR
+        </a>
+
+        <a
+          class="btn secondary"
+          id="reject"
+          href="?modo=alternativa"
+        >
+          Prefiro continuar sem este material
+        </a>
+      </div>
+
+      <p class="trust" id="trust">
+        Escolha livremente a opção que faz mais sentido para você.
+      </p>
+    </section>
+
+    <section class="panel hidden" id="final">
+      <h2>Tudo certo!</h2>
+      <p class="description">
+        Você pode continuar sem adicionar outro material à sua compra.
+        Se precisar de ajuda, fale com nosso suporte.
       </p>
     </section>
 
     <footer>
-      Dúvidas? Entre em contato:<br>
-      <a href="mailto:ezequiel.figueiredo100@gmail.com">
-        ezequiel.figueiredo100@gmail.com
-      </a><br>
-      <a href="https://wa.me/5577981479700">
-        Suporte pelo WhatsApp
-      </a>
+      <div>Precisa de ajuda? Entre em contato com nosso suporte.</div>
+
+      <nav class="support-links" aria-label="Canais de suporte">
+        <a
+          href="https://wa.me/5577981479700"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Suporte WhatsApp</a>
+
+        <a href="mailto:ezequiel.figueiredo100@gmail.com">
+          Suporte e-mail
+        </a>
+      </nav>
+
+      <p>Primeiro Currículo na Prática</p>
     </footer>
   </main>
 
   <script>
-    // A página inicia no modo upsell.
-    // Use ?oferta=downsell para visualizar o mini guia.
-    const downsell =
-      new URLSearchParams(window.location.search).get("oferta") === "downsell";
+    const params = new URLSearchParams(window.location.search);
+    const mode = params.get("modo");
 
-    if (downsell) {
-      document.title = "Mini Guia: 15 Perguntas de Entrevista";
+    const accept = document.getElementById("accept");
+    const reject = document.getElementById("reject");
+
+    if (mode === "alternativa") {
+      document.title = "Uma opção mais acessível";
+
       document.getElementById("eyebrow").textContent =
-        "Uma alternativa mais compacta";
+        "Uma opção mais compacta";
+
       document.getElementById("headline").textContent =
         "Comece a praticar para sua próxima entrevista";
+
       document.getElementById("intro").textContent =
-        "Uma opção mais enxuta para organizar sua preparação.";
-      document.getElementById("tag").textContent = "MINI GUIA";
+        "Conheça uma alternativa mais enxuta para organizar sua preparação.";
+
+      document.getElementById("product-label").textContent =
+        "GUIA PRÁTICO";
+
       document.getElementById("product").textContent =
         "Mini Guia: 15 Perguntas de Entrevista";
+
       document.getElementById("description").textContent =
         "Uma versão compacta para quem quer começar gastando menos.";
+
       document.getElementById("benefits").innerHTML = `
-        <li>Uma estrutura simples para praticar perguntas comuns.</li>
-        <li>Espaço para organizar suas próprias respostas.</li>
-        <li>Um material compacto para revisar antes da entrevista.</li>
+        <li>Um roteiro compacto para praticar perguntas de entrevista.</li>
+        <li>Orientações para organizar suas próprias respostas.</li>
+        <li>Um material prático para revisar antes de uma entrevista.</li>
       `;
+
       document.getElementById("price").textContent = "R$ 9,90";
+
+      document.getElementById("price-note").textContent =
+        "Oferta opcional. Confira o conteúdo antes de comprar.";
+
+      accept.href =
+        "https://pay.cakto.com.br/vi53k4d_1202575";
+
+      accept.textContent = "QUERO O MINI GUIA";
+
+      reject.textContent = "Não, obrigado. Continuar";
+
+      reject.href = "?modo=final";
+
+      document.getElementById("trust").textContent =
+        "Você decide se deseja adquirir este material.";
+    }
+
+    if (mode === "final") {
+      document.title = "Obrigado pela visita";
+
+      document.getElementById("hero").classList.add("hidden");
+      document.getElementById("offer").classList.add("hidden");
+      document.getElementById("final").classList.remove("hidden");
     }
   </script>
 </body>
