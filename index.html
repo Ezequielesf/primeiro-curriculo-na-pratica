@@ -3,10 +3,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#075b46">
-  <meta name="description" content="Materiais práticos para preparar seu currículo e se preparar para entrevistas.">
-  <title>Primeiro Currículo na Prática</title>
+  <meta name="description" content="Prepare-se melhor para entrevistas de emprego com materiais digitais práticos.">
+  <title>Kit Preparação para Entrevistas | Primeiro Currículo na Prática</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +42,13 @@
     a { color: inherit; }
 
     .container {
-      width: min(1120px, calc(100% - 32px));
+      width: min(1120px, calc(100% - 40px));
       margin: 0 auto;
     }
 
     .header {
       border-bottom: 1px solid var(--border);
-      background: rgba(255,255,255,.96);
+      background: rgba(255,255,255,.94);
     }
 
     .header-inner {
@@ -87,20 +87,23 @@
       color: var(--muted);
     }
 
-    .header-note { font-size: 12px; color: var(--muted); }
+    .header-note {
+      font-size: 12px;
+      color: var(--muted);
+    }
 
     .hero {
       overflow: hidden;
       background:
         radial-gradient(ellipse at 85% 25%, rgba(18,128,92,.10), transparent 37%),
-        linear-gradient(135deg, #fbfcfa, #f1f7f3);
-      padding: 68px 0 76px;
+        linear-gradient(135deg, #fbfcfa 0%, #f1f7f3 100%);
+      padding: 76px 0 82px;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.04fr .96fr;
-      gap: 45px;
+      gap: 58px;
       align-items: center;
     }
 
@@ -113,7 +116,7 @@
       color: var(--green);
       border-radius: 100px;
       font-size: 11px;
-      letter-spacing: .07em;
+      letter-spacing: .08em;
       text-transform: uppercase;
       font-weight: 800;
     }
@@ -125,7 +128,7 @@
     }
 
     h1 {
-      font-size: clamp(35px, 4.7vw, 56px);
+      font-size: clamp(36px, 4.7vw, 57px);
       margin: 23px 0 20px;
       font-weight: 800;
     }
@@ -135,7 +138,7 @@
     .lead {
       color: var(--muted);
       font-size: 17px;
-      max-width: 540px;
+      max-width: 520px;
       margin: 0;
     }
 
@@ -143,7 +146,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px 18px;
-      margin-top: 27px;
+      margin-top: 28px;
     }
 
     .mini-benefit {
@@ -168,7 +171,7 @@
     }
 
     .visual {
-      min-height: 380px;
+      min-height: 390px;
       position: relative;
       display: flex;
       align-items: center;
@@ -179,8 +182,8 @@
     .visual::before {
       content: "";
       position: absolute;
-      width: 320px;
-      height: 320px;
+      width: 340px;
+      height: 340px;
       border-radius: 50%;
       background: #dcefe5;
       z-index: -1;
@@ -188,8 +191,8 @@
 
     .product-cover {
       width: min(265px, 70%);
-      min-height: 320px;
-      padding: 25px 22px;
+      min-height: 330px;
+      padding: 26px 23px;
       border-radius: 9px;
       color: white;
       background: linear-gradient(150deg, #147a5a, #063d32 75%);
@@ -211,29 +214,35 @@
       opacity: .8;
     }
 
-    .cover-symbol { font-size: 45px; margin: 18px 0; }
+    .cover-symbol {
+      font-size: 48px;
+      margin: 18px 0;
+    }
 
     .product-cover h2 {
-      font-size: 25px;
+      font-size: 26px;
       margin: 0;
       letter-spacing: -.04em;
     }
 
-    .product-cover p { font-size: 12px; opacity: .85; }
+    .product-cover p {
+      font-size: 12px;
+      opacity: .85;
+    }
 
     .cover-footer {
-      padding-top: 15px;
+      padding-top: 16px;
       border-top: 1px solid rgba(255,255,255,.25);
       font-size: 10px;
     }
 
     .paper {
       position: absolute;
-      right: 0;
+      right: 1%;
       top: 13%;
-      width: 145px;
-      min-height: 220px;
-      padding: 17px 13px;
+      width: 155px;
+      height: 235px;
+      padding: 18px 14px;
       background: white;
       border-radius: 7px;
       box-shadow: var(--shadow);
@@ -241,44 +250,72 @@
       z-index: 1;
     }
 
-    .paper h3 { font-size: 14px; margin: 8px 0 18px; }
-    .paper-line { height: 6px; background: #e5ece8; border-radius: 8px; margin: 12px 0; }
+    .paper h3 {
+      font-size: 14px;
+      margin: 8px 0 18px;
+      letter-spacing: -.02em;
+    }
+
+    .paper-line {
+      height: 6px;
+      background: #e5ece8;
+      border-radius: 8px;
+      margin: 12px 0;
+    }
+
     .paper-line.short { width: 62%; }
 
     .phone-card {
       position: absolute;
       left: 0;
-      bottom: 8%;
+      bottom: 10%;
       z-index: 3;
       background: white;
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 13px;
-      width: 150px;
+      padding: 14px;
+      width: 155px;
       box-shadow: var(--shadow);
       transform: rotate(-3deg);
       font-size: 11px;
     }
 
-    .phone-card strong { display: block; margin-bottom: 8px; }
-    .phone-row { margin-top: 7px; padding: 7px; border-radius: 7px; background: var(--green-soft); color: var(--green); }
+    .phone-card strong {
+      display: block;
+      margin-bottom: 8px;
+    }
 
-    .offer-section { padding: 75px 0; }
+    .phone-row {
+      margin-top: 7px;
+      padding: 7px;
+      border-radius: 7px;
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .offer-section { padding: 78px 0; }
 
     .offer-grid {
       display: grid;
       grid-template-columns: 1fr .85fr;
-      gap: 55px;
+      gap: 60px;
       align-items: center;
     }
 
-    .offer-copy h2 { font-size: clamp(30px, 4vw, 42px); margin: 18px 0; }
-    .offer-copy > p { color: var(--muted); font-size: 16px; }
+    .offer-copy h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      margin: 18px 0;
+    }
+
+    .offer-copy > p {
+      color: var(--muted);
+      font-size: 16px;
+    }
 
     .benefit-list {
       list-style: none;
       padding: 0;
-      margin: 26px 0 0;
+      margin: 27px 0 0;
       display: grid;
       gap: 14px;
     }
@@ -292,7 +329,7 @@
     }
 
     .price-card {
-      padding: 31px;
+      padding: 32px;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       background: linear-gradient(145deg, #fff, #f6faf7);
@@ -307,12 +344,19 @@
       letter-spacing: .08em;
     }
 
+    .old-price {
+      color: #8b9994;
+      text-decoration: line-through;
+      font-size: 15px;
+      margin-top: 18px;
+    }
+
     .price {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      margin: 12px 0 8px;
+      margin: 2px 0 8px;
     }
 
     .price strong {
@@ -331,7 +375,11 @@
       border-radius: 100px;
     }
 
-    .price-note { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+    .price-note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
 
     .buy-button {
       width: 100%;
@@ -357,7 +405,8 @@
       filter: brightness(1.08);
     }
 
-    .buy-button:focus-visible, .support-link:focus-visible {
+    .buy-button:focus-visible,
+    .support-link:focus-visible {
       outline: 3px solid #9bd8bd;
       outline-offset: 4px;
     }
@@ -366,7 +415,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       margin-top: 22px;
       color: var(--muted);
       font-size: 11px;
@@ -375,25 +424,37 @@
     .trust-item { display: flex; align-items: center; gap: 6px; }
     .trust-item span { color: var(--green); font-size: 15px; }
 
-    .story-section { background: #103e33; color: white; padding: 60px 0; }
+    .story-section {
+      background: #103e33;
+      color: white;
+      padding: 62px 0;
+    }
 
     .story-grid {
       display: grid;
       grid-template-columns: .85fr 1fr;
-      gap: 50px;
+      gap: 55px;
       align-items: center;
     }
 
     .story-image {
       width: 100%;
-      min-height: 260px;
+      min-height: 275px;
       object-fit: cover;
       border-radius: 18px;
     }
 
-    .story-copy h2 { font-size: 30px; margin: 0 0 25px; }
+    .story-copy h2 {
+      font-size: 30px;
+      margin: 0 0 25px;
+    }
 
-    .story-point { display: flex; gap: 15px; align-items: flex-start; margin: 20px 0; }
+    .story-point {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
 
     .story-icon {
       flex: 0 0 42px;
@@ -410,7 +471,11 @@
     .story-point strong { display: block; font-size: 14px; }
     .story-point p { margin: 3px 0 0; color: #d0e0d9; font-size: 13px; }
 
-    .footer { padding: 35px 0; background: #0b2925; color: white; }
+    .footer {
+      padding: 36px 0;
+      background: #0b2925;
+      color: white;
+    }
 
     .footer-inner {
       display: flex;
@@ -420,8 +485,13 @@
       gap: 24px;
     }
 
-    .footer-brand { font-weight: 800; font-family: "Manrope", sans-serif; }
+    .footer-brand {
+      font-weight: 800;
+      font-family: "Manrope", sans-serif;
+    }
+
     .footer-note { color: #b8cdc4; font-size: 12px; margin-top: 5px; }
+
     .support { display: flex; flex-wrap: wrap; gap: 12px; }
 
     .support-link {
@@ -454,44 +524,46 @@
       transition: opacity .7s ease, transform .7s ease;
     }
 
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    .thank-you {
-      text-align: center;
-      padding: 85px 0 100px;
-      background: linear-gradient(135deg, #fbfcfa, #f1f7f3);
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    .thank-you .lead { margin: 0 auto; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0) rotate(-5deg); }
       50% { transform: translateY(-10px) rotate(-3deg); }
     }
 
-    [hidden] { display: none !important; }
-
     @media (max-width: 800px) {
-      .hero { padding: 48px 0; }
-      .hero-grid, .offer-grid, .story-grid { grid-template-columns: 1fr; gap: 30px; }
-      .visual { min-height: 330px; }
-      .offer-section { padding: 52px 0; }
-      .price-card { padding: 24px; }
-      .story-image { min-height: 210px; max-height: 300px; }
+      .hero { padding: 52px 0; }
+
+      .hero-grid, .offer-grid, .story-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .hero-grid { gap: 15px; }
+      .visual { min-height: 350px; }
+      .offer-section { padding: 55px 0; }
+      .price-card { padding: 25px; }
+      .story-grid { gap: 28px; }
+      .story-image { min-height: 220px; max-height: 300px; }
       .header-note { display: none; }
     }
 
     @media (max-width: 420px) {
+      .container { width: min(calc(100% - 28px), 1120px); }
       .header-inner { min-height: 68px; }
       .brand { font-size: 13px; }
-      h1 { font-size: 36px; }
+      h1 { font-size: 37px; }
       .lead { font-size: 15px; }
-      .visual { min-height: 290px; }
-      .visual::before { width: 250px; height: 250px; }
-      .product-cover { min-height: 260px; width: 220px; padding: 20px; }
+      .visual { min-height: 300px; }
+      .visual::before { width: 260px; height: 260px; }
+      .product-cover { min-height: 270px; width: 220px; padding: 20px; }
       .product-cover h2 { font-size: 22px; }
-      .paper { width: 110px; min-height: 175px; }
-      .phone-card { width: 125px; left: -3px; }
+      .paper { width: 115px; height: 180px; right: 0; }
+      .phone-card { width: 125px; left: -4px; }
+      .price-card { padding: 22px 18px; }
       .trust-row { justify-content: flex-start; }
       .support { width: 100%; }
     }
@@ -503,6 +575,7 @@
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
       }
+
       .reveal { opacity: 1; transform: none; }
     }
   </style>
@@ -511,7 +584,7 @@
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="?modo=principal" aria-label="Primeiro Currículo na Prática - início">
+      <a class="brand" href="/" aria-label="Primeiro Currículo na Prática - início">
         <span class="brand-icon" aria-hidden="true">▤</span>
         <span>Primeiro Currículo<small>na Prática</small></span>
       </a>
@@ -523,12 +596,15 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
-          <span class="eyebrow" id="hero-eyebrow">✦ Material digital prático</span>
-          <h1 id="hero-title">Prepare-se para sua próxima entrevista com <span>mais confiança</span></h1>
+          <span class="eyebrow">✦ Material digital prático</span>
+          <h1 id="hero-title">
+            Prepare-se para sua próxima entrevista com <span>mais confiança</span>
+          </h1>
           <p class="lead" id="hero-description">
             Organize suas ideias, pratique suas respostas e chegue mais preparado para conversar sobre suas habilidades.
           </p>
-          <div class="mini-benefits" id="mini-benefits">
+
+          <div class="mini-benefits">
             <div class="mini-benefit"><span class="check">✓</span> Perguntas comuns</div>
             <div class="mini-benefit"><span class="check">✓</span> Exemplos de respostas</div>
             <div class="mini-benefit"><span class="check">✓</span> Exercícios práticos</div>
@@ -538,10 +614,13 @@
         <div class="visual reveal" aria-label="Prévia ilustrativa do material digital">
           <div class="paper" aria-hidden="true">
             <span class="eyebrow">Prática</span>
-            <h3 id="paper-title">Perguntas comuns</h3>
-            <div class="paper-line"></div><div class="paper-line short"></div>
-            <div class="paper-line"></div><div class="paper-line short"></div>
-            <div class="paper-line"></div><div class="paper-line short"></div>
+            <h3>Perguntas comuns</h3>
+            <div class="paper-line"></div>
+            <div class="paper-line short"></div>
+            <div class="paper-line"></div>
+            <div class="paper-line short"></div>
+            <div class="paper-line"></div>
+            <div class="paper-line short"></div>
           </div>
 
           <div class="product-cover">
@@ -569,7 +648,10 @@
         <div class="offer-copy reveal">
           <span class="eyebrow" id="offer-eyebrow">Kit completo</span>
           <h2 id="offer-title">Kit Preparação para Entrevistas</h2>
-          <p id="offer-description">Perguntas comuns, exemplos de respostas e exercícios para praticar antes de uma entrevista.</p>
+          <p id="offer-description">
+            Perguntas comuns, exemplos de respostas e exercícios para praticar antes de uma entrevista.
+          </p>
+
           <ul class="benefit-list" id="benefits">
             <li><span class="check">✓</span><span>Pratique respostas para perguntas frequentes.</span></li>
             <li><span class="check">✓</span><span>Organize sua apresentação pessoal.</span></li>
@@ -579,17 +661,26 @@
         </div>
 
         <aside class="price-card reveal">
-          <div class="price-label" id="price-label">Acesso ao material digital</div>
+          <div class="price-label">Acesso ao material digital</div>
+          <div class="old-price" id="old-price" hidden></div>
+
           <div class="price">
             <strong id="price">R$ 27,90</strong>
-            <span class="price-tag" id="price-tag" hidden></span>
+            <span class="price-tag" id="discount" hidden></span>
           </div>
-          <p class="price-note" id="price-note">Um material prático para ajudar você a se preparar.</p>
-          <a class="buy-button" id="buy-button" href="https://pay.cakto.com.br/gd6uct8_1201635">
-            <span aria-hidden="true">↗</span><span id="buy-label">QUERO ME PREPARAR</span>
+
+          <p class="price-note" id="price-note">
+            Um material prático para ajudar você a se preparar.
+          </p>
+
+          <a class="buy-button" id="buy-button"
+             href="https://pay.cakto.com.br/gd6uct8_1201635">
+            <span aria-hidden="true">↗</span>
+            <span id="buy-label">QUERO ME PREPARAR</span>
           </a>
+
           <div class="trust-row">
-            <div class="trust-item"><span aria-hidden="true">✓</span> Checkout Cakto</div>
+            <div class="trust-item"><span aria-hidden="true">♧</span> Checkout Cakto</div>
             <div class="trust-item"><span aria-hidden="true">↯</span> Compra online</div>
             <div class="trust-item"><span aria-hidden="true">✓</span> Suporte disponível</div>
           </div>
@@ -597,25 +688,40 @@
       </div>
     </section>
 
-    <section class="story-section" id="story-section">
+    <section class="story-section">
       <div class="container story-grid">
-        <img class="story-image reveal"
+        <img
+          class="story-image reveal"
           src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
-          alt="Pessoas colaborando em ambiente profissional" loading="lazy"
+          alt="Pessoas colaborando em um ambiente profissional"
+          loading="lazy"
           onerror="this.style.display='none'">
+
         <div class="story-copy reveal">
           <h2>Prepare-se um passo de cada vez.</h2>
+
           <div class="story-point">
             <div class="story-icon" aria-hidden="true">◎</div>
-            <div><strong>Organize suas ideias</strong><p>Estruture o que você quer dizer antes da entrevista.</p></div>
+            <div>
+              <strong>Organize suas ideias</strong>
+              <p>Estruture o que você quer dizer antes da entrevista.</p>
+            </div>
           </div>
+
           <div class="story-point">
             <div class="story-icon" aria-hidden="true">▤</div>
-            <div><strong>Pratique no seu ritmo</strong><p>Use os materiais como apoio para estudar e revisar.</p></div>
+            <div>
+              <strong>Pratique no seu ritmo</strong>
+              <p>Use os materiais como apoio para estudar e revisar.</p>
+            </div>
           </div>
+
           <div class="story-point">
             <div class="story-icon" aria-hidden="true">↗</div>
-            <div><strong>Valorize suas experiências</strong><p>Organize suas habilidades e exemplos pessoais.</p></div>
+            <div>
+              <strong>Valorize suas experiências</strong>
+              <p>Aprenda a organizar suas habilidades e exemplos pessoais.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -628,148 +734,130 @@
         <div class="footer-brand">Primeiro Currículo na Prática</div>
         <div class="footer-note">Seu próximo passo começa com preparação.</div>
       </div>
+
       <div>
         <strong>Precisa de ajuda?</strong>
         <div class="support">
-          <a class="support-link" href="https://wa.me/5577981479700" target="_blank" rel="noopener noreferrer">◉ Suporte WhatsApp</a>
-          <a class="support-link" href="mailto:ezequiel.figueiredo100@gmail.com">✉ Suporte e-mail</a>
+          <a class="support-link"
+             href="https://wa.me/5577981479700"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span aria-hidden="true">◉</span> Suporte WhatsApp
+          </a>
+
+          <a class="support-link"
+             href="mailto:ezequiel.figueiredo100@gmail.com">
+            <span aria-hidden="true">✉</span> Suporte e-mail
+          </a>
         </div>
       </div>
-      <div class="copyright">© <span id="year"></span> Primeiro Currículo na Prática. Todos os direitos reservados.</div>
+
+      <div class="copyright">
+        © <span id="year"></span> Primeiro Currículo na Prática. Todos os direitos reservados.
+      </div>
     </div>
   </footer>
 
   <script>
     (() => {
       const params = new URLSearchParams(window.location.search);
-      const mode = params.get("modo") || "principal";
+      const mode = params.get("modo");
 
-      const $ = (id) => document.getElementById(id);
+      const main = document.getElementById("main-content");
 
-      $("year").textContent = new Date().getFullYear();
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
 
-      const products = {
-        principal: {
-          title: "Primeiro Currículo na Prática",
-          hero: 'Monte seu primeiro currículo com <span>mais confiança</span>',
-          heroDescription: "Um guia prático para ajudar você a organizar suas informações e criar um currículo claro, mesmo sem experiência profissional.",
-          cover: "Primeiro Currículo na Prática",
-          coverDescription: "Orientações · Modelo editável",
-          paper: "Seu currículo",
-          eyebrow: "Guia prático",
-          offerTitle: "Primeiro Currículo na Prática",
-          description: "Aprenda a estruturar suas informações e apresentar suas habilidades em um currículo organizado.",
-          benefits: [
-            "Organize seus dados e informações pessoais.",
-            "Apresente suas habilidades com clareza.",
-            "Use um modelo editável como ponto de partida.",
-            "Adapte o currículo à oportunidade desejada."
-          ],
-          price: "R$ 19,90",
-          note: "Guia prático + modelo de currículo editável.",
-          button: "QUERO MEU CURRÍCULO",
-          url: null
-        },
-        oferta: {
-          title: "Kit Preparação para Entrevistas",
-          hero: 'Prepare-se para sua próxima entrevista com <span>mais confiança</span>',
-          heroDescription: "Organize suas ideias, pratique suas respostas e chegue mais preparado para conversar sobre suas habilidades.",
-          cover: "Kit Preparação para Entrevistas",
-          coverDescription: "Perguntas · Respostas · Exercícios",
-          paper: "Perguntas comuns",
-          eyebrow: "Kit completo",
-          offerTitle: "Kit Preparação para Entrevistas",
-          description: "Perguntas comuns, exemplos de respostas e exercícios para praticar antes de uma entrevista.",
-          benefits: [
-            "Pratique respostas para perguntas frequentes.",
-            "Organize sua apresentação pessoal.",
-            "Identifique habilidades e experiências relevantes.",
-            "Prepare-se no seu ritmo, antes da entrevista."
-          ],
-          price: "R$ 27,90",
-          note: "Um material prático para ajudar você a se preparar.",
-          button: "QUERO ME PREPARAR",
-          url: "https://pay.cakto.com.br/gd6uct8_1201635"
-        },
-        alternativa: {
-          title: "Mini Guia: 15 Perguntas de Entrevista",
-          hero: 'Pratique para sua próxima entrevista com <span>mais clareza</span>',
-          heroDescription: "Um guia compacto para ajudar você a revisar perguntas comuns e organizar suas respostas antes de uma entrevista.",
-          cover: "Mini Guia: 15 Perguntas de Entrevista",
-          coverDescription: "Perguntas · Orientações · Prática",
-          paper: "15 perguntas",
-          eyebrow: "Mini guia",
-          offerTitle: "Mini Guia: 15 Perguntas de Entrevista",
-          description: "Uma versão compacta para quem quer começar gastando menos.",
-          benefits: [
-            "Pratique perguntas comuns de entrevistas.",
-            "Organize suas próprias respostas.",
-            "Revise o conteúdo antes de uma entrevista."
-          ],
-          price: "R$ 9,90",
-          note: "Um guia compacto para começar a praticar.",
-          button: "QUERO O MINI GUIA",
-          url: "https://pay.cakto.com.br/vi53k4d_1202575"
-        }
-      };
-
-      function renderProduct(product) {
-        document.title = product.title + " | Primeiro Currículo na Prática";
-        $("hero-title").innerHTML = product.hero;
-        $("hero-description").textContent = product.heroDescription;
-        $("cover-title").textContent = product.cover;
-        $("cover-description").textContent = product.coverDescription;
-        $("paper-title").textContent = product.paper;
-        $("offer-eyebrow").textContent = product.eyebrow;
-        $("offer-title").textContent = product.offerTitle;
-        $("offer-description").textContent = product.description;
-        $("price").textContent = product.price;
-        $("price-note").textContent = product.note;
-        $("buy-label").textContent = product.button;
-
-        $("benefits").replaceChildren(...product.benefits.map((benefit) => {
-          const li = document.createElement("li");
-          const check = document.createElement("span");
-          const text = document.createElement("span");
-          check.className = "check";
-          check.textContent = "✓";
-          text.textContent = benefit;
-          li.append(check, text);
-          return li;
-        }));
-
-        if (product.url) {
-          $("buy-button").href = product.url;
-        } else {
-          $("buy-button").href = "https://pay.cakto.com.br/SEU_CHECKOUT_PRINCIPAL";
-        }
-
-        if (mode === "principal") {
-          $("story-section").hidden = true;
-        }
-      }
-
+      // PÁGINA FINAL
       if (mode === "final") {
-        $("main-content").innerHTML = `
-          <section class="thank-you">
-            <div class="container">
+        document.title = "Obrigado | Primeiro Currículo na Prática";
+
+        main.innerHTML = `
+          <section class="hero">
+            <div class="container" style="
+              max-width: 760px;
+              padding-top: 45px;
+              padding-bottom: 45px;
+              text-align: center;
+            ">
               <span class="eyebrow">Primeiro Currículo na Prática</span>
-              <h1>Tudo certo! <span>Obrigado pela visita.</span></h1>
-              <p class="lead">
-                Você pode continuar sem adicionar outro material.
-                Se precisar de ajuda, fale com nosso suporte.
+
+              <h1 style="font-size: clamp(34px, 5vw, 48px);">
+                Obrigado pela visita!
+              </h1>
+
+              <p class="lead" style="margin: 0 auto;">
+                Você pode continuar sua jornada de preparação no seu ritmo.
+                Se precisar de ajuda com uma compra ou com os materiais,
+                nosso suporte está disponível.
               </p>
+
+              <div style="margin-top: 30px;">
+                <a class="buy-button"
+                   href="https://wa.me/5577981479700"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style="max-width: 360px; margin: 0 auto;">
+                  FALAR COM O SUPORTE
+                </a>
+              </div>
             </div>
           </section>
         `;
-      } else {
-        renderProduct(products[mode] || products.principal);
+
       }
 
+      // OFERTA ALTERNATIVA: MINI GUIA POR R$ 9,90
+      else if (mode === "alternativa") {
+        document.title =
+          "Mini Guia: 15 Perguntas de Entrevista | Primeiro Currículo na Prática";
+
+        document.getElementById("hero-title").innerHTML =
+          'Pratique para sua próxima entrevista com <span>mais clareza</span>';
+
+        document.getElementById("hero-description").textContent =
+          "Um guia compacto para ajudar você a revisar perguntas comuns e organizar suas respostas antes de uma entrevista.";
+
+        document.getElementById("cover-title").textContent =
+          "Mini Guia: 15 Perguntas de Entrevista";
+
+        document.getElementById("cover-description").textContent =
+          "Perguntas · Orientações · Prática";
+
+        document.getElementById("offer-eyebrow").textContent =
+          "Mini guia";
+
+        document.getElementById("offer-title").textContent =
+          "Mini Guia: 15 Perguntas de Entrevista";
+
+        document.getElementById("offer-description").textContent =
+          "Uma versão compacta para quem quer começar gastando menos.";
+
+        document.getElementById("benefits").innerHTML = `
+          <li><span class="check">✓</span><span>Pratique perguntas comuns de entrevistas.</span></li>
+          <li><span class="check">✓</span><span>Organize suas próprias respostas.</span></li>
+          <li><span class="check">✓</span><span>Revise o conteúdo antes da entrevista.</span></li>
+        `;
+
+        document.getElementById("price").textContent = "R$ 9,90";
+
+        document.getElementById("price-note").textContent =
+          "Um guia compacto para começar a praticar.";
+
+        document.getElementById("buy-button").href =
+          "https://pay.cakto.com.br/vi53k4d_1202575";
+
+        document.getElementById("buy-label").textContent =
+          "QUERO O MINI GUIA";
+      }
+
+      // ANIMAÇÕES
       const elements = document.querySelectorAll(".reveal");
 
-      if ("IntersectionObserver" in window &&
-          !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      if (
+        "IntersectionObserver" in window &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
