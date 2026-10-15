@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,7 +18,6 @@
       --green-soft: #e2f3eb;
       --ink: #122b2b;
       --muted: #60716f;
-      --cream: #f7f8f5;
       --white: #fff;
       --border: #e4eae6;
       --radius: 22px;
@@ -411,6 +409,15 @@
       outline-offset: 4px;
     }
 
+    .secondary-link {
+      display: block;
+      margin-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      text-decoration: underline;
+    }
+
     .trust-row {
       display: flex;
       justify-content: space-between;
@@ -536,12 +543,10 @@
 
     @media (max-width: 800px) {
       .hero { padding: 52px 0; }
-
       .hero-grid, .offer-grid, .story-grid {
         grid-template-columns: 1fr;
         gap: 32px;
       }
-
       .hero-grid { gap: 15px; }
       .visual { min-height: 350px; }
       .offer-section { padding: 55px 0; }
@@ -575,7 +580,6 @@
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
       }
-
       .reveal { opacity: 1; transform: none; }
     }
   </style>
@@ -679,6 +683,10 @@
             <span id="buy-label">QUERO ME PREPARAR</span>
           </a>
 
+          <a class="secondary-link" id="alternative-link" href="/?modo=alternativa">
+            Vou continuar sem este material
+          </a>
+
           <div class="trust-row">
             <div class="trust-item"><span aria-hidden="true">♧</span> Checkout Cakto</div>
             <div class="trust-item"><span aria-hidden="true">↯</span> Compra online</div>
@@ -762,7 +770,6 @@
     (() => {
       const params = new URLSearchParams(window.location.search);
       const mode = params.get("modo");
-
       const main = document.getElementById("main-content");
 
       document.getElementById("year").textContent =
@@ -804,10 +811,9 @@
             </div>
           </section>
         `;
-
       }
 
-      // OFERTA ALTERNATIVA: MINI GUIA POR R$ 9,90
+      // DOWNSELL: MINI GUIA POR R$ 9,90
       else if (mode === "alternativa") {
         document.title =
           "Mini Guia: 15 Perguntas de Entrevista | Primeiro Currículo na Prática";
@@ -849,6 +855,12 @@
 
         document.getElementById("buy-label").textContent =
           "QUERO O MINI GUIA";
+
+        const alternativeLink =
+          document.getElementById("alternative-link");
+
+        alternativeLink.href = "/?modo=final";
+        alternativeLink.textContent = "Continuar sem comprar";
       }
 
       // ANIMAÇÕES
